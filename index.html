@@ -63,7 +63,8 @@
   /* HERO */
   .hero{padding:78px 0 60px}
   .hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
-  .hero h1{font-size:clamp(2.9rem,5.4vw,4.7rem);margin:18px 0;font-style:italic;font-weight:600}
+  .hero h1{font-size:clamp(2.4rem,4.6vw,3.8rem);margin:16px 0 2px;font-style:italic;font-weight:600}
+  .hero-model{font-family:'Cormorant Garamond';font-style:italic;font-weight:600;font-size:clamp(1.3rem,2.4vw,1.9rem);color:var(--emerald);margin:0 0 16px}
   .hero .sub{font-size:1.17rem;color:var(--ink-2);max-width:490px}
   .hero-cta{display:flex;gap:14px;margin:34px 0 16px;flex-wrap:wrap}
   .sample-link{display:inline-block;margin-bottom:28px;font-weight:600;font-size:.96rem;color:var(--emerald);border-bottom:1px solid rgba(77,153,173,.4);padding-bottom:2px;transition:.2s}
@@ -144,9 +145,9 @@
   .serve-content{position:relative;z-index:2;color:#fff;padding:70px 40px;width:100%}
   .serve-content .wrap{width:100%}
   .serve-content h2{color:#fff;font-size:clamp(2rem,3.6vw,3rem);max-width:620px;margin:16px 0 30px}
-  .serve-list{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-dark);border:1px solid var(--line-dark);border-radius:16px;overflow:hidden;max-width:900px}
-  .serve-list div{background:rgba(8,42,31,.55);backdrop-filter:blur(4px);padding:22px 20px;font-family:'Cormorant Garamond';font-weight:500;font-size:1.05rem;color:#fff}
-  @media(max-width:760px){.serve-list{grid-template-columns:1fr 1fr}}
+  .serve-list{display:flex;flex-wrap:wrap;gap:12px;max-width:1040px}
+  .serve-list div{background:rgba(8,42,31,.5);backdrop-filter:blur(6px);border:1px solid var(--line-dark);border-radius:12px;padding:18px 26px;font-family:'Cormorant Garamond';font-weight:500;font-size:1.08rem;color:#fff}
+  @media(max-width:760px){.serve-list div{flex:1 1 100%;text-align:center}}
 
   /* ORDERING */
   .order .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:60px;margin-top:64px;border-top:1px solid var(--line)}
@@ -228,7 +229,8 @@
   <div class="wrap hero-grid">
     <div class="hero-copy rv">
       <span class="eyebrow">OEM-Compatible · Made in the USA</span>
-      <h1>OEM-Compatible Replacement Filters for Fellowes® AeraMax Pro AM3 &amp; AM4.</h1>
+      <h1>OEM-Compatible Replacement Filters</h1>
+      <p class="hero-model">for the Fellowes® AeraMax Pro AM3 &amp; AM4</p>
       <p class="sub">Proudly manufactured in Hopkinsville, Kentucky. Designed specifically for large organizations seeking to reduce annual replacement filter costs without compromising fit, performance, quality, or supply-chain reliability.</p>
       <div class="hero-cta">
         <a class="btn btn-gold" href="#pricing">Request Volume Pricing</a>
